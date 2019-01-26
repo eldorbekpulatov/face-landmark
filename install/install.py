@@ -8,7 +8,7 @@ args = parser.parse_args()
 if(args.jupyter):
     cmd = "conda env create -f environment_with_jupyter.yml"
 else:
-    md = "conda env create -f environment_without_jupyter.yml"
+    cmd = "conda env create -f environment_without_jupyter.yml"
 
 try:    
     os.system(cmd)
